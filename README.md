@@ -1,121 +1,303 @@
 # ResumeCraft
 
-A modern, AI-inspired resume builder designed for university students, graduates, and internship/job applicants. Create professional, ATS-friendly resumes in minutes with guided sections, modern templates, and real-time preview.
+<div align="center">
 
-## Features
+![ResumeCraft](https://img.shields.io/badge/ResumeCraft-Resume%20Builder-blue?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
-- **Smart Resume Builder** - Build your resume through structured sections and guided inputs
-- **Live Preview** - See changes instantly while editing
-- **ATS-Friendly Formatting** - Clean formatting designed for applicant tracking systems
-- **Professional Templates** - Choose from Executive, Modern, and ATS Focus templates
-- **Resume Strength Indicator** - Visual completion score to guide you
-- **Local Saving** - Automatically save progress using browser localStorage
-- **Customization** - Adjust templates, colors, fonts, and spacing
-- **PDF Export** - Download your resume as PDF
-- **Multiple Resumes** - Create and manage multiple resumes
+**A product-focused resume builder for students, graduates, and job seekers**
 
-## Tech Stack
+[Live Demo](https://kavigamage-da.github.io/ResumeCraft/) • [Report Bug](https://github.com/kavigamage-da/ResumeCraft/issues) • [Request Feature](https://github.com/kavigamage-da/ResumeCraft/issues)
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- localStorage for data persistence
-
-## Quick Start
-
-1. Clone this repository
-2. Open `index.html` in your browser
-3. Start building your resume!
-
-## Deployment to GitHub Pages
-
-### Option 1: GitHub Pages (Recommended)
-
-1. **Create a GitHub Repository**
-   - Go to [github.com](https://github.com) and sign in
-   - Click the "+" button and select "New repository"
-   - Name your repository (e.g., `resumecraft`)
-   - Make it "Public" so anyone can access it
-   - Click "Create repository"
-
-2. **Upload Your Files**
-   - Click "uploading an existing file"
-   - Drag and drop these files:
-     - `index.html`
-     - `styles.css`
-     - `app.js`
-   - Click "Commit changes"
-
-3. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Click "Settings" tab
-   - Scroll down to "GitHub Pages" section
-   - Under "Source", select "Deploy from a branch"
-   - Select "main" branch and "/ (root)" folder
-   - Click "Save"
-
-4. **Access Your Site**
-   - Wait 1-2 minutes for deployment
-   - Your site will be available at: `https://yourusername.github.io/resumecraft/`
-
-### Option 2: Netlify (Alternative)
-
-1. Go to [netlify.com](https://netlify.com) and sign up
-2. Drag and drop your project folder into Netlify
-3. Your site will be live instantly with a URL like `https://random-name.netlify.app`
-
-### Option 3: Vercel (Alternative)
-
-1. Go to [vercel.com](https://vercel.com) and sign up
-2. Import your GitHub repository
-3. Vercel will automatically deploy your site
-
-## Usage
-
-1. **Landing Page** - Click "Build My Resume" to get started
-2. **Dashboard** - View your resumes, create new ones, or edit existing
-3. **Resume Builder**
-   - Fill in your information across 9 sections
-   - See real-time preview on the right
-   - Customize template, colors, fonts, and spacing
-   - Track your resume strength score
-4. **Export** - Download your resume as PDF using the "Download PDF" button
-
-## Project Structure
-
-```
-ResumeCraft/
-├── index.html      # Main HTML file
-├── styles.css      # All styles and design system
-├── app.js          # JavaScript application logic
-└── README.md       # This file
-```
-
-## Browser Compatibility
-
-- Chrome/Edge (recommended)
-- Firefox
-- Safari
-- Opera
-
-## Data Privacy
-
-- All resume data is stored locally in your browser using localStorage
-- No data is sent to external servers
-- Your information stays private on your device
-
-## License
-
-This project is open source and available for anyone to use and modify.
-
-## Contributing
-
-Feel free to fork this repository and make improvements!
-
-## Support
-
-For issues or questions, please open an issue on GitHub.
+</div>
 
 ---
 
-Built with ❤️ for job seekers everywhere
+## Overview
+
+**ResumeCraft** is a responsive web-based resume builder designed to simplify the process of creating professional, ATS-friendly resumes.
+
+The application guides users through structured resume sections while providing real-time preview, template customization, local saving, resume-strength feedback, and PDF export.
+
+The project combines **product thinking, user-focused design, and front-end development** to create a practical tool for students, graduates, and internship/job applicants.
+
+---
+
+## Product Workflow
+
+```text
+Create
+   ↓
+Add Information
+   ↓
+Customize
+   ↓
+Preview
+   ↓
+Save
+   ↓
+Export PDF
+```
+
+The workflow is designed to reduce friction and make resume creation easier through guided inputs, instant feedback, and a clear editing experience.
+
+---
+
+## Key Features
+
+### 📝 Guided Resume Builder
+
+Build a resume through structured sections and guided inputs instead of starting from a blank document.
+
+### 👀 Live Preview
+
+See resume changes instantly while editing information.
+
+### 📄 ATS-Friendly Formatting
+
+Uses clean, structured formatting designed to improve readability and compatibility with applicant tracking systems.
+
+### 🎨 Professional Templates
+
+Choose between:
+
+* Executive
+* Modern
+* ATS Focus
+
+### 📊 Resume Strength Indicator
+
+A dynamic completion indicator helps users identify missing or incomplete resume information.
+
+### 💾 Local Saving
+
+Resume information is stored locally using browser `localStorage`, allowing users to continue working without a backend.
+
+### ⚙️ Customization
+
+Customize:
+
+* Template
+* Accent color
+* Font
+* Font size
+* Spacing
+
+### 📥 PDF Export
+
+Export the completed resume as a professional PDF for applications and sharing.
+
+### 📚 Multiple Resumes
+
+Create and manage multiple resume versions for different applications or career opportunities.
+
+---
+
+## Resume Sections
+
+ResumeCraft supports the following sections:
+
+* Personal Information
+* Professional Summary
+* Education
+* Experience
+* Projects
+* Skills
+* Certifications
+* Achievements
+* Languages
+
+---
+
+## Tech Stack
+
+| Layer        | Technology                      |
+| ------------ | ------------------------------- |
+| Frontend     | HTML5, CSS3, Vanilla JavaScript |
+| Data Storage | Browser localStorage            |
+| Deployment   | GitHub Pages                    |
+
+No backend or database is required.
+
+---
+
+## Product & UX Thinking
+
+ResumeCraft was designed around a simple user problem:
+
+> Creating and maintaining a professional resume can be time-consuming and difficult, especially for students and early-career applicants.
+
+The product addresses this through:
+
+* Guided resume creation
+* Structured information entry
+* Real-time visual feedback
+* Reusable templates
+* Resume completion guidance
+* Local data persistence
+* Easy PDF export
+
+This project demonstrates how **product thinking and front-end development can be combined to solve a practical user problem**.
+
+---
+
+## Live Demo
+
+🚀 **Try ResumeCraft:**
+
+https://kavigamage-da.github.io/ResumeCraft/
+
+---
+
+## How to Use
+
+### Online
+
+1. Open the [Live Demo](https://kavigamage-da.github.io/ResumeCraft/)
+2. Select **Build My Resume**
+3. Enter your personal and professional information
+4. Complete the available resume sections
+5. Select a resume template
+6. Customize the visual appearance
+7. Review the live preview
+8. Save your resume
+9. Export the completed resume as PDF
+
+### Local Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kavigamage-da/ResumeCraft.git
+```
+
+Open the project folder and launch:
+
+```text
+index.html
+```
+
+in a modern web browser.
+
+No server or backend setup is required.
+
+---
+
+## Project Structure
+
+```text
+ResumeCraft/
+├── index.html      # Application structure
+├── styles.css      # Design system and responsive styling
+├── app.js          # Application logic and interactions
+└── README.md       # Project documentation
+```
+
+---
+
+## Privacy
+
+ResumeCraft uses browser-based storage.
+
+* Resume information is stored locally using `localStorage`
+* No backend database is required
+* Resume information is not intentionally transmitted to an external server
+* Users can manage their resume information directly within their browser
+
+---
+
+## Responsive Design
+
+ResumeCraft is designed for:
+
+* 💻 Desktop
+* 💻 Laptop
+* 📱 Tablet
+* 📱 Mobile
+
+The interface adapts the editor and resume preview to different screen sizes.
+
+---
+
+## Browser Compatibility
+
+Recommended browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Safari
+* Opera
+
+For the most consistent PDF export experience, a modern Chromium-based browser is recommended.
+
+---
+
+## Future Improvements
+
+Potential future enhancements include:
+
+* AI-assisted resume suggestions
+* Job-description-based resume optimization
+* More professional templates
+* Cover letter generation
+* Resume version comparison
+* Cloud synchronization
+* Authentication
+* Additional export formats
+* Job-specific resume customization
+
+---
+
+## Deployment
+
+ResumeCraft is deployed using **GitHub Pages**.
+
+To deploy your own version:
+
+1. Fork the repository
+2. Open **Settings**
+3. Navigate to **Pages**
+4. Select the appropriate branch
+5. Save the configuration
+6. GitHub will provide your published site URL
+
+---
+
+## Contributing
+
+Contributions and suggestions are welcome.
+
+You can:
+
+* Fork the repository
+* Create a feature branch
+* Improve the application
+* Submit a pull request
+* Open an issue for bugs or feature suggestions
+
+---
+
+## Support
+
+If you encounter a problem or have an improvement suggestion, please open an issue in the repository.
+
+---
+
+## License
+
+This project is open source and available under the **MIT License**.
+
+---
+
+<div align="center">
+
+### ResumeCraft
+
+**Build better resumes. Present yourself better.**
+
+⭐ If you find this project useful, consider starring the repository.
+
+</div>
