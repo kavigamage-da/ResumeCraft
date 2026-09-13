@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft - Build Professional Resumes</title>
+    <meta name="description" content="Create professional, ATS-friendly resumes in minutes with guided sections, modern templates, and real-time preview.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">ResumeCraft</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#templates" class="nav-link">Templates</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link" id="sign-in-btn">Sign In</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary" id="explore-templates-nav">Explore Templates</button>
+                    <button class="btn btn-primary" id="build-resume-nav">Build My Resume</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Build a Resume That Gets Noticed.</h1>
+                    <p class="hero-subtitle">Create a professional, ATS-friendly resume in minutes with guided sections, modern templates, and real-time preview.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" id="create-resume-hero">Create My Resume</button>
+                        <button class="btn btn-secondary btn-large" id="explore-templates-hero">Explore Templates</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="resume-preview-mockup" id="hero-resume-preview">
+                        <div class="mockup-header">
+                            <div class="mockup-name">Alex Johnson</div>
+                            <div class="mockup-title">Software Engineer</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-section">
+                                <div class="mockup-section-title">Experience</div>
+                                <div class="mockup-item">
+                                    <div class="mockup-item-title">Senior Developer</div>
+                                    <div class="mockup-item-subtitle">Tech Corp</div>
+                                </div>
+                            </div>
+                            <div class="mockup-section">
+                                <div class="mockup-section-title">Education</div>
+                                <div class="mockup-item">
+                                    <div class="mockup-item-title">B.S. Computer Science</div>
+                                    <div class="mockup-item-subtitle">Stanford University</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <section class="trust-strip">
+            <div class="trust-container">
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span class="trust-text">ATS-Friendly</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span class="trust-text">Professional Templates</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span class="trust-text">Real-Time Preview</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span class="trust-text">Easy Export</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Everything You Need</h2>
+                    <p class="section-subtitle">Powerful features to create the perfect resume</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3 class="feature-title">Smart Resume Builder</h3>
+                        <p class="feature-description">Build your resume through structured sections and guided inputs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👁️</div>
+                        <h3 class="feature-title">Live Preview</h3>
+                        <p class="feature-description">See changes instantly while editing your resume.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">ATS-Friendly Formatting</h3>
+                        <p class="feature-description">Clean formatting designed to remain readable by applicant tracking systems.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">Professional Templates</h3>
+                        <p class="feature-description">Choose from multiple professionally designed resume layouts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Resume Strength</h3>
+                        <p class="feature-description">Visual resume completeness/progress score to guide you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3 class="feature-title">Local Saving</h3>
+                        <p class="feature-description">Automatically save progress using browser localStorage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Create your professional resume in four simple steps</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Enter Your Information</h3>
+                        <p class="step-description">Fill in your details through our guided forms</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Choose a Template</h3>
+                        <p class="step-description">Select from our professional template options</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Customize Your Resume</h3>
+                        <p class="step-description">Adjust colors, fonts, and spacing to match your style</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Preview & Export</h3>
+                        <p class="step-description">Review your resume and export as PDF</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Section -->
+        <section class="templates-section" id="templates">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Templates</h2>
+                    <p class="section-subtitle">Choose from our curated collection of resume designs</p>
+                </div>
+                <div class="templates-grid">
+                    <div class="template-card" data-template="executive">
+                        <div class="template-preview template-executive">
+                            <div class="template-mini-header"></div>
+                            <div class="template-mini-body">
+                                <div class="template-mini-line"></div>
+                                <div class="template-mini-line short"></div>
+                            </div>
+                        </div>
+                        <h3 class="template-name">Executive</h3>
+                        <p class="template-description">Minimal corporate design</p>
+                    </div>
+                    <div class="template-card" data-template="modern">
+                        <div class="template-preview template-modern">
+                            <div class="template-mini-header accent"></div>
+                            <div class="template-mini-body">
+                                <div class="template-mini-line"></div>
+                                <div class="template-mini-line short"></div>
+                            </div>
+                        </div>
+                        <h3 class="template-name">Modern</h3>
+                        <p class="template-description">Clean contemporary design</p>
+                    </div>
+                    <div class="template-card" data-template="ats">
+                        <div class="template-preview template-ats">
+                            <div class="template-mini-header simple"></div>
+                            <div class="template-mini-body">
+                                <div class="template-mini-line"></div>
+                                <div class="template-mini-line short"></div>
+                            </div>
+                        </div>
+                        <h3 class="template-name">ATS Focus</h3>
+                        <p class="template-description">Text-first structure for readability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="section-container">
+                <div class="benefits-content">
+                    <div class="benefits-text">
+                        <h2 class="section-title">Why Choose ResumeCraft?</h2>
+                        <p class="section-subtitle">Built for job seekers who want to stand out</p>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="benefit-check">✓</span>
+                                <span>No account required - start building immediately</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-check">✓</span>
+                                <span>Data stored locally in your browser</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-check">✓</span>
+                                <span>Create and manage multiple resumes</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-check">✓</span>
+                                <span>Export to PDF with one click</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-check">✓</span>
+                                <span>Completely free to use</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common questions about ResumeCraft</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">Is ResumeCraft free?</div>
+                        <div class="faq-answer">Yes. ResumeCraft is designed as a free frontend-first resume builder. All features are available at no cost.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Is my resume saved?</div>
+                        <div class="faq-answer">Yes. Resume data is stored locally in your browser using localStorage. Your data stays on your device and is never sent to external servers.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I create multiple resumes?</div>
+                        <div class="faq-answer">Yes. You can create, edit, and manage multiple resumes for different job applications.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I customize templates?</div>
+                        <div class="faq-answer">Yes. You can customize accent colors, fonts, font sizes, and section spacing to match your preferences.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="section-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Build Your Resume?</h2>
+                    <p class="cta-subtitle">Join thousands of job seekers who have created professional resumes with ResumeCraft</p>
+                    <button class="btn btn-primary btn-large" id="create-resume-cta">Create My Resume</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="footer-logo">ResumeCraft</div>
+                    <p class="footer-tagline">Build better resumes. Present yourself better.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#templates" class="footer-link">Templates</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Company</h4>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Legal</h4>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Terms</a>
+                        <a href="#" class="footer-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 ResumeCraft. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page hidden">
+        <nav class="navbar dashboard-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">ResumeCraft</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary" id="back-to-landing">Back to Home</button>
+                    <button class="btn btn-primary" id="new-resume-dashboard">+ Create New Resume</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">Welcome back 👋</h1>
+                <p class="dashboard-subtitle">Continue building your professional resume</p>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-resumes">0</div>
+                    <div class="stat-label">My Resumes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-strength">0%</div>
+                    <div class="stat-label">Resume Strength</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-updated">-</div>
+                    <div class="stat-label">Last Updated</div>
+                </div>
+            </div>
+
+            <div class="resumes-section">
+                <div class="section-header">
+                    <h2 class="section-title">My Resumes</h2>
+                    <button class="btn btn-primary" id="new-resume-section">+ Create New Resume</button>
+                </div>
+                <div class="resumes-grid" id="resumes-grid">
+                    <!-- Resume cards will be dynamically added here -->
+                </div>
+                <div class="empty-state" id="resumes-empty">
+                    <div class="empty-icon">📄</div>
+                    <h3 class="empty-title">No resumes yet</h3>
+                    <p class="empty-description">Create your first professional resume to get started</p>
+                    <button class="btn btn-primary" id="create-first-resume">Create Your First Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Builder Page -->
+    <div id="builder-page" class="page hidden">
+        <nav class="navbar builder-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">ResumeCraft</span>
+                </div>
+                <div class="builder-actions">
+                    <div class="auto-save-indicator" id="auto-save-indicator">
+                        <span class="save-icon">💾</span>
+                        <span class="save-text">Saved</span>
+                    </div>
+                    <button class="btn btn-secondary" id="back-to-dashboard">Back to Dashboard</button>
+                    <button class="btn btn-primary" id="download-pdf">Download PDF</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="builder-container">
+            <!-- Left Sidebar - Sections -->
+            <div class="builder-sidebar">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">Sections</h3>
+                </div>
+                <div class="sidebar-sections">
+                    <button class="section-btn active" data-section="personal">
+                        <span class="section-icon">👤</span>
+                        <span class="section-label">Personal Information</span>
+                    </button>
+                    <button class="section-btn" data-section="summary">
+                        <span class="section-icon">📝</span>
+                        <span class="section-label">Professional Summary</span>
+                    </button>
+                    <button class="section-btn" data-section="education">
+                        <span class="section-icon">🎓</span>
+                        <span class="section-label">Education</span>
+                    </button>
+                    <button class="section-btn" data-section="experience">
+                        <span class="section-icon">💼</span>
+                        <span class="section-label">Experience</span>
+                    </button>
+                    <button class="section-btn" data-section="projects">
+                        <span class="section-icon">🚀</span>
+                        <span class="section-label">Projects</span>
+                    </button>
+                    <button class="section-btn" data-section="skills">
+                        <span class="section-icon">⚡</span>
+                        <span class="section-label">Skills</span>
+                    </button>
+                    <button class="section-btn" data-section="certifications">
+                        <span class="section-icon">🏆</span>
+                        <span class="section-label">Certifications</span>
+                    </button>
+                    <button class="section-btn" data-section="achievements">
+                        <span class="section-icon">⭐</span>
+                        <span class="section-label">Achievements</span>
+                    </button>
+                    <button class="section-btn" data-section="languages">
+                        <span class="section-icon">🌍</span>
+                        <span class="section-label">Languages</span>
+                    </button>
+                </div>
+
+                <!-- Resume Strength Indicator -->
+                <div class="strength-indicator">
+                    <div class="strength-header">
+                        <span class="strength-label">Resume Strength</span>
+                        <span class="strength-value" id="strength-value">0%</span>
+                    </div>
+                    <div class="strength-bar">
+                        <div class="strength-fill" id="strength-fill"></div>
+                    </div>
+                    <div class="strength-details" id="strength-details">
+                        <!-- Dynamic strength details -->
+                    </div>
+                </div>
+
+                <!-- Customization Panel -->
+                <div class="customization-panel">
+                    <div class="customization-header">
+                        <h3 class="customization-title">Customize</h3>
+                    </div>
+                    <div class="customization-options">
+                        <div class="customization-group">
+                            <label class="customization-label">Template</label>
+                            <select class="customization-select" id="template-select">
+                                <option value="executive">Executive</option>
+                                <option value="modern">Modern</option>
+                                <option value="ats">ATS Focus</option>
+                            </select>
+                        </div>
+                        <div class="customization-group">
+                            <label class="customization-label">Accent Color</label>
+                            <div class="color-options">
+                                <button class="color-btn" data-color="#6366f1" style="background: #6366f1;"></button>
+                                <button class="color-btn" data-color="#8b5cf6" style="background: #8b5cf6;"></button>
+                                <button class="color-btn" data-color="#0ea5e9" style="background: #0ea5e9;"></button>
+                                <button class="color-btn" data-color="#10b981" style="background: #10b981;"></button>
+                                <button class="color-btn" data-color="#f59e0b" style="background: #f59e0b;"></button>
+                            </div>
+                        </div>
+                        <div class="customization-group">
+                            <label class="customization-label">Font</label>
+                            <select class="customization-select" id="font-select">
+                                <option value="inter">Inter</option>
+                                <option value="roboto">Roboto</option>
+                                <option value="opensans">Open Sans</option>
+                            </select>
+                        </div>
+                        <div class="customization-group">
+                            <label class="customization-label">Font Size</label>
+                            <select class="customization-select" id="fontsize-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                        <div class="customization-group">
+                            <label class="customization-label">Section Spacing</label>
+                            <select class="customization-select" id="spacing-select">
+                                <option value="compact">Compact</option>
+                                <option value="normal" selected>Normal</option>
+                                <option value="relaxed">Relaxed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Editor Area -->
+            <div class="builder-editor">
+                <div class="editor-header">
+                    <h2 class="editor-title" id="editor-title">Personal Information</h2>
+                    <button class="btn btn-secondary btn-sm" id="save-resume-btn">Save Resume</button>
+                </div>
+                <div class="editor-content" id="editor-content">
+                    <!-- Dynamic form content will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Right Preview Area -->
+            <div class="builder-preview">
+                <div class="preview-header">
+                    <h3 class="preview-title">Live Preview</h3>
+                    <button class="btn btn-secondary btn-sm" id="toggle-preview-mobile">Toggle Preview</button>
+                </div>
+                <div class="preview-content">
+                    <div class="resume-document" id="resume-preview">
+                        <!-- Dynamic resume preview will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toast-message">Saved successfully</span>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirm-modal">
+        <div class="modal-content">
+            <h3 class="modal-title" id="modal-title">Confirm Action</h3>
+            <p class="modal-message" id="modal-message">Are you sure you want to proceed?</p>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
